@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Мой профиль</h1>
+        <img src="https://via.placeholder.com/150" alt="Фото профиля" class="profile-photo" id="profile-photo">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" value="Анна">
+
+        <label for="age">Возраст:</label>
+        <input type="number" id="age" value="25">
+
+        <label for="bio">О себе:</label>
+        <textarea id="bio" rows="3">Люблю путешествия и книги.</textarea>
+
+        <button class="save-btn" onclick="saveProfile()">Сохранить изменения</button>
+        <button class="subscribe-btn" onclick="subscribe()">Оформить подписку</button>
+    </div>
+
+    <div class="nav-container">
+        <a href="../Chat/chat.html" class="nav-btn">Чат</a>
+        <a href="../Profile_view/profile_view.html" class="nav-btn">Просмотр анкет</a>
+        <a href="../Likes/likes.html" class="nav-btn">Лайки</a>
+        <a href="profile_page.html" class="nav-btn">Профиль</a>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

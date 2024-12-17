@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лайки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="likes-container" id="likes-container">
+        <!-- Пример карточек -->
+        <div class="like-card">
+            <img src="https://via.placeholder.com/400x200" alt="Фото пользователя" class="like-photo" id="photo-1">
+            <div class="like-name">Анна</div>
+            <div class="subscribe-msg">Откройте фото с подпиской</div>
+            <button class="subscribe-btn" onclick="unlockPhoto(1)">Оформить подписку</button>
+        </div>
+        <div class="like-card">
+            <img src="https://via.placeholder.com/400x200/87CEEB" alt="Фото пользователя" class="like-photo" id="photo-2">
+            <div class="like-name">Иван</div>
+            <div class="subscribe-msg">Откройте фото с подпиской</div>
+            <button class="subscribe-btn" onclick="unlockPhoto(2)">Оформить подписку</button>
+        </div>
+    </div>
+    <div class="nav-container">
+        <a href="../Chat/chat.html" class="nav-btn">Чат</a>
+        <a href="../Profile_view/profile_view.html" class="nav-btn">Просмотр анкет</a>
+        <a href="likes.html" class="nav-btn">Лайки</a>
+        <a href="../Profile_page/profile_page.html" class="nav-btn">Профиль</a>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

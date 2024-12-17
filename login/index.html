@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRD Meet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Главная обволочка -->
+    <div class="container">
+        <!-- Зона включения регистрации или входа -->
+        <div class="form-box">
+            <h1>PRD Meet</h1>
+            <!-- Переключатель -->
+            <div class="toggle-container">
+                <button class="toggle-btn active" id="login-btn">Вход</button>
+                <button class="toggle-btn" id="register-btn">Регистрация</button>
+            </div>
+            <!-- Форма Входа -->
+            <form id="login-form" class="form active">
+                <input type="number" placeholder="Номер телефона" required>
+                <input type="password" placeholder="Пароль" required>
+                <button type="submit">Войти</button>
+                <a href="#" class="forgot-link">Забыли пароль?</a>
+            </form>
+            <!-- Форма Регистрации -->
+            <form id="register-form" class="form">
+                <input type="text" placeholder="Имя" required>
+                <input type="number" placeholder="Номер телефона" required>
+                <input type="password" placeholder="Пароль" required>
+                <input type="password" placeholder="Повторите пароль" required>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

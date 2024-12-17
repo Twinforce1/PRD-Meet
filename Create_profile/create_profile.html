@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание Анкеты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Главная обертка -->
+    <div class="container">
+        <h1>Создание анкеты</h1>
+        <form id="profile-form">
+
+            <!-- Поле возраста -->
+            <label for="age">Возраст:</label>
+            <input type="number" id="age" name="age" placeholder="Ваш возраст" min="18" required>
+
+            <!-- Поле пола -->
+            <label for="gender">Пол:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Выберите пол</option>
+                <option value="male">Мужской</option>
+                <option value="female">Женский</option>
+                <option value="other">Другое</option>
+            </select>
+
+            <!-- Поле интересов -->
+            <label for="interests">Интересы:</label>
+            <textarea id="interests" name="interests" rows="4" placeholder="Расскажите о ваших интересах"></textarea>
+
+            <!-- Загрузка фото -->
+            <label for="photo">Загрузите фото:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+            <img id="photo-preview" alt="Предварительный просмотр фото">
+
+            <!-- Кнопка отправки -->
+            <button type="submit">Создать анкету</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
