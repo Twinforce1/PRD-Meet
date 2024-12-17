@@ -76,6 +76,6 @@
 - Оптимизация интерфейса для мобильных устройств.
 
 ## Автор
-**Mikhail Kondratev**
-**Alexander Fadeev**
-**Nikita Alekin**
+- **Mikhail Kondratev**
+- **Alexander Fadeev**
+- **Nikita Alekin**
