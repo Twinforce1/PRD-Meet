@@ -24,10 +24,48 @@
                 <option value="female">Женский</option>
                 <option value="other">Другое</option>
             </select>
+            <!-- Поле города -->
+            <label for="name">Город:</label>
+            <input type="text" id="city" placeholder="Город проживания">
 
-            <!-- Поле интересов -->
-            <label for="interests">Интересы:</label>
-            <textarea id="interests" name="interests" rows="4" placeholder="Расскажите о ваших интересах"></textarea>
+            <!-- Поле роста -->
+            <label for="name">Рост:</label>
+            <input type="text" id="height" placeholder="Рост">
+
+            <!-- Поле языков -->
+            <label for="language">Язык:</label>
+            <select id="language" name="language" required>
+                <option value="">Выберите язык</option>
+                <option value="russian">Русский</option>
+                <option value="english">Английский</option>
+            </select>
+             <!-- Поле интересов -->
+             <form>
+                <p>Выберите интересы:</p>
+                <label>
+                    <input type="checkbox" name="interests" value="movie">
+                    Кино
+                </label><br>
+                <label>
+                    <input type="checkbox" name="interests" value="sport">
+                    Спорт
+                </label><br>
+                <label>
+                    <input type="checkbox" name="interests" value="walking">
+                    Прогулки
+                </label><br>
+                <label>
+                    <input type="checkbox" name="interests" value=books">
+                    Книги
+                </label><br>
+                <label>
+                    <input type="checkbox" name="interests" value="culture">
+                    Культура
+                </label>
+            </form>
+            <!-- Поле описания -->
+            <label for="bio">Описание:</label>
+            <textarea id="bio" name="bio" rows="4" placeholder="Расскажите о себе"></textarea>
 
             <!-- Загрузка фото -->
             <label for="photo">Загрузите фото:</label>
