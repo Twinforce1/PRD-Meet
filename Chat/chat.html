@@ -5,28 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Чат</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<head>
-<body>
-    <div class="chat-wrapper">
-        <div class="chat-header">Чат</div>
-        <div class="chat-container" id="chat-container">
-            <!-- Пример сообщений -->
-            <div class="message received">Привет! Как твои дела?</div>
-            <div class="message sent">Привет! Всё отлично, а у тебя?</div>
+    <body>
+        <div class="chat-menu">
+            <div class="menu-header">Список чатов</div>
+            <ul class="chat-list">
+                <li class="chat-item" data-chat="anna">
+                    <img src="https://via.placeholder.com/40" alt="Фото">
+                    <span>Чат с Анной</span>
+                </li>
+                <li class="chat-item" data-chat="ivan">
+                    <img src="https://via.placeholder.com/40" alt="Фото">
+                    <span>Чат с Иваном</span>
+                </li>
+                <li class="chat-item" data-chat="maria">
+                    <img src="https://via.placeholder.com/40" alt="Фото">
+                    <span>Чат с Марией</span>
+                </li>
+            </ul>
         </div>
-        <div class="chat-input">
-            <input type="text" id="chat-message" placeholder="Введите сообщение...">
-            <button id="send-button">Отправить</button>
+        <div class="chat-wrapper">
+            <div class="chat-header" id="chat-header">Чат</div>
+            <div class="chat-container" id="chat-container">
+                <!-- Сообщения появятся здесь -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chat-message" placeholder="Введите сообщение...">
+                <button id="send-button">Отправить</button>
+            </div>
         </div>
-    </div>
-    <div class="nav-container">
-        <a href="chat.html" class="nav-btn">Чат</a>
-        <a href="../Profile_view/profile_view.html" class="nav-btn">Просмотр анкет</a>
-        <a href="../Likes/likes.html" class="nav-btn">Лайки</a>
-        <a href="../Profile_page/profile_page.html" class="nav-btn">Профиль</a>
-    </div>
-    <script src="scripts.js"></script>
-</body>
+        <div class="nav-container">
+            <a href="../Chat/chat.html" class="nav-btn">Чат</a>
+            <a href="../Profile_view/profile_view.html" class="nav-btn">Просмотр анкет</a>
+            <a href="../Likes/likes.html" class="nav-btn">Лайки</a>
+            <a href="../Profile_page/profile_page.html" class="nav-btn">Профиль</a>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
 </head>
 </html>
